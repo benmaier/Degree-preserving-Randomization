@@ -9,10 +9,10 @@ def get_degree_preserving_randomization(edges):
     producing neither self links nor duplicate links.
     The degree sequence will stay the same.
     INPUT:
-    --- edges: list or set containing pairs (tuples or lists of two elements) of nodes 
+    --- edges: list or set containing node pairs (tuples or lists of two nodes)
          
     OUTPUT:
-    --- new_edges: new list or set containing new pairs (tuples of two elements) of nodes
+    --- new_edges: new list containing new node pairs (tuples of two nodes)
     '''
     
     # make new set copy from edgelist
