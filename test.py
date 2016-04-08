@@ -7,7 +7,7 @@ from collections import Counter
 
 from networkprops import networkprops as nprops
 
-from ConstDegRand import degree_preserving_randomization
+from ConstDegRand import get_degree_preserving_randomization
 
 G = nx.fast_gnp_random_graph(100,0.1)
 edges = G.edges()
@@ -28,7 +28,7 @@ G = nx.Graph()
 G.add_edges_from(edges)
 
  
-new_edges = degree_preserving_randomization(edges)
+new_edges = get_degree_preserving_randomization(edges)
 
 G2 = nx.Graph()
 G2.add_edges_from(new_edges)
